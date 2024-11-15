@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+  margin: auto;
+  padding: 20px;
+  max-width: 1200px;
+
+  margin-bottom: 40px;
+}
+
+header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main {
+  margin-top: 50px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, -webkit-max-content));
+  grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+  gap: 80px;
+  justify-content: center;
+}
+
+.perspective-header{
+  margin-top: 100px;
+}
+
+:root {
+  --btn1-a: hsl(6, 100%, 57%);
+  --btn1-b: hsl(24, 100%, 57%);
+
+  --btn2-a: hsl(286, 100%, 45%);
+  --btn2-b: hsl(305, 100%, 47%);
+
+  --btn3-a: hsl(204, 100%, 53%);
+  --btn3-b: hsl(214, 100%, 53%);
+
+  --btn4-a: hsl(151, 100%, 40%);
+  --btn4-b: hsl(202, 48%, 21%);
+}
+
+/* All buttons property  */
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+
+  /* Show element when its position is shifted in 3d */
+  transform-style: preserve-3d;
+  position: relative;
+
+  font-size: 20px;
+  margin-bottom: 1em;
+
+  transition: transform 0.5s ease-in-out;
+
+  --color-a: transparent;
+  --color-b: transparent;
+  --height: 2.5em;
+  --width: 9em;
+
+  width: var(--width);
+  height: var(--height);
+}
+
+button::before,
+button::after {
+  position: absolute;
+  color: white;
+
+  width: var(--width);
+  height: var(--height);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  /* hide the element when its backface is shown*/
+  backface-visibility: hidden;
+}
+
+button::before {
+  content: attr(data-default);
+  background-color: var(--color-a);
+
+  transform: translateZ(calc(var(--height) / 2));
+}
+
+button::after {
+  content: attr(data-hover);
+  background-color: var(--color-b);
+
+  transform: rotateX(90deg) translateZ(calc(var(--height) / 2));
+}
+
+button:hover {
+  transform: rotateX(-90deg) translateZ(calc(var(--height) / 2));
+}
+
+/* Button1  */
+.btn1 {
+  --color-a: var(--btn1-a);
+  --color-b: var(--btn1-b);
+}
+
+/* Button2 */
+.btn2 {
+  --color-a: var(--btn2-a);
+  --color-b: var(--btn2-b);
+}
+
+.btn2::before,
+.btn2::after {
+  border-radius: 2.5em;
+}
+
+/* Button3 */
+.btn3 {
+  --color-a: var(--btn3-a);
+  --color-b: var(--btn3-b);
+}
+
+.btn3::before {
+  border: 0.2em solid var(--btn3-b);
+}
+
+/* Card */
+.card {
+  --color-a: var(--btn4-a);
+  --color-b: var(--btn4-b);
+  transition-duration: 2s;
+}
+
+.card::after,
+.card::before {
+  /* --height: 5em; */
+  border-radius: 0.5em;
+}
+
+.card:hover{
+  transform: rotateY(-180deg);
+}
+
+.card::before {
+  transform:  none;
+  color: var(--color-b);
+}
+
+.card::after {
+  transform:rotateY(180deg);
+  color: var(--color-a);
+}
+
+
+/* Perspective*/
+.perspective-container{
+  /* How far the viewer is (3d feel) */
+  perspective: 20em;
+}
+
+.perspective-container button:not(.card){
+  transform:translateZ(calc(var(--height)  / -2)) ;
+}
+
+.perspective-container button:hover:not(.card) {
+  transform: rotateX(-90deg) translateZ(calc(var(--height) / 2)) ;
+}

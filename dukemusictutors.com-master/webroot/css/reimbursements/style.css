@@ -1,0 +1,106 @@
+.inline-block {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.search-field {
+
+}
+
+div.search-field-div {
+    width: 80%;
+    padding: 10px;
+}
+
+.plus-button {
+    float: right;
+    margin-right: 2%;
+    margin-top: 1.5%;
+	border: 2px solid lightgrey;
+	background-color: #fff;
+	font-size: 1rem;
+	height: 2rem;
+	width: 2rem;
+	border-radius: 2rem;
+	position: relative;
+}
+
+.plus-button:after, .plus-button:before {
+    content: "";
+    display: block;
+    background-color: grey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plus-button:after {
+    height: 0.2rem;
+    width: 1rem;
+}
+
+.plus-button:before {
+    height: 1rem;
+    width: 0.2rem;
+}
+
+div.arrow-head {
+    margin-top: 2.5%;
+    margin-left: 1%;
+    border: solid white;
+    border-width: 0 0.3rem 0.3rem 0;
+    display: inline-block;
+    padding: 0.3rem;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+a.back-arrow {
+    background-color: transparent;
+    margin-left: 1%;
+}
+
+div.blue-oval {
+    background-color: #014694;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+/* override some things in base.css */
+div.main-content label {
+    cursor: auto;
+    color: white;
+}
+
+div.main-content div.error-message {
+    /** FIXME style **/
+    color:red;
+    font-size: 0.8rem;
+}
+
+/** From form.css **/
+div.main-content button.submit {
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+    margin: 1rem 0;
+}
+
+div.blue-oval, div.main-content button.submit {
+    background-color: #014694;
+}
+
+div.blue-oval:hover, div.main-content button.submit:hover {
+    background-color: #0451aa; /* also #0459b9 */
+}
+
+div.blue-oval {
+    transition: background-color 300ms ease-out;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}

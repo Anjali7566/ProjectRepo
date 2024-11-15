@@ -1,0 +1,69 @@
+nav {
+    background-color: white;
+    color: black;
+    width: 100%;
+    font-size: 1.05rem;
+    position: fixed;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.nav-height {
+    height: 3.6rem;
+}
+
+.shadow {
+    -webkit-box-shadow : 0 3px 3px -2px #000000; 
+    -moz-box-shadow : 0 3px 3px -2px #000000;
+    -ms-box-shadow : 0 3px 3px -2px #000000;
+    -o-box-shadow : 0 3px 3px -2px #000000;
+    box-shadow : 0 3px 3px -2px #000000;
+}
+
+#nav-logo-wrapper {
+    z-index: 11;
+    float: left;
+	/* position: relative; needed??? */
+	width: 5rem;
+	height: 100%;
+}
+
+#nav-logo {
+    border-radius: 0px 4px 4px 4px;
+    height: 100%;
+    width: auto;
+}
+
+div.nav-links {
+    height: 100%;
+    text-align: center;
+}
+
+a.nav-link {
+    text-decoration: none;
+    z-index: 11;
+    height: 3rem;
+    line-height: 3rem;
+    display: inline-block;
+    border-radius: 0.25rem;
+    padding: 0 0.5rem;
+    margin: 0.2rem 0;
+
+    color: #3E3E3E;
+    transition: all .35s ease;
+    -webkit-transition: all .35s ease;
+}
+
+a.nav-link:hover {
+    text-decoration: none;
+
+    background-color: rgba(62, 62, 62, 0.3);
+    color: #181818;
+    transition: all .35s ease;
+    -webkit-transition: all .35s ease;
+}
+
+#nav-space-placeholder {
+	z-index: -1;
+    left: 0;
+}

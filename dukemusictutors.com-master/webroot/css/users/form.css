@@ -1,0 +1,46 @@
+div.myform {
+    align-content: center;
+    text-align: center;
+}
+
+div.myform .pad {
+    padding-top: 1.5rem;
+}
+
+div.myform .pad-bottom {
+    padding-bottom: 1.5rem;
+}
+
+div.myform .field-name {
+    text-align: right;
+}
+
+div.myform.user-form button.submit {
+    background-color: #3E3E3E;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+}
+
+div.myform.user-form button.submit:hover {
+    background-color: #181818;
+}
+
+div.myform.user-form p {
+    font-size: 0.8rem;
+}
+
+div.myform option {
+    color: black;
+}
+
+div.myform select, div.myform select:hover {
+    background-color: #fafafa;
+}
+
+div.myform input {
+    margin-right: 1rem;
+}
+
+div.myform label {
+    padding-left: 1rem;
+}

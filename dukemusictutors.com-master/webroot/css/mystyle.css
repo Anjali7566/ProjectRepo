@@ -1,0 +1,186 @@
+#myhtml, body, div.main-content {
+    font-size: 27px;
+    background-color: #3E3E3E;
+    font-family: 'Encode Sans', sans-serif;
+    color: #f0f0f0;
+    padding: 0;
+    margin: 0;
+}
+
+div.main-content {
+    position: relative;
+    width: 100%;
+    min-height: calc(100% - 3.6rem); /* using .nav-height in nav.css*/ /*FIXME do with js, needs to be screen height? */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+h1.soft-text-shadow, h2.soft-text-shadow, h3.soft-text-shadow, h4.soft-text-shadow, h5.soft-text-shadow {
+    text-shadow: 0.03rem 0.03rem  0.03rem  black; 
+}
+
+h1.text-shadow, h2.text-shadow, h3.text-shadow, h4.text-shadow, h5.text-shadow {
+    text-shadow: 0.05rem 0.05rem  0.05rem  black; 
+}
+
+div.main-content h1 {
+    font-size: 1.75rem;
+}
+
+div.main-content h2 {
+    font-size: 1.3rem;
+}
+
+div.main-content h3 {
+    font-size: 1.15rem;
+}
+
+div.main-content h4 {
+    font-size: 1rem;
+}
+
+div.main-content p {
+    font-size: 1rem;
+}
+
+div.main-content a {
+    color: white;
+}
+
+div.main-content a:hover {
+    text-decoration: none;
+}
+
+.white {
+    background-color: white;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right:0;
+}
+
+div {
+    overflow: hidden;
+}
+
+div.blue-background {
+    background-color: #014694;
+}
+
+div.gray-background {
+    background-color: #3E3E3E;
+}
+
+div.center-text {
+    text-align: center;
+}
+
+.centered-horizontal {
+    /* width can't be 100% to work */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* use centered-vertical-wrapper as a parent and centered-vertical-helper span alongside */
+img.centered-vertical {
+    position: absolute;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+div.centered-vertical-wrapper {
+    position: relative;
+}
+
+div.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+/**** FIXME get styles from old style.css for messages, error-message, error.message etc. ****/
+
+.myform .error-message {
+    display: block;
+    padding: 0.375rem 0.5625rem 0.5625rem;
+    margin-top: -1px;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.715);
+}
+
+.myform.u
+
+.error label,
+.error label.error {
+    color: #C3232D;
+}
+
+
+div.message {
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    padding: 0 1.5rem 0 1.5rem;
+    transition: height 300ms ease-out 0s;
+    background-color: #a0d3e8;
+    color: #626262;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
+    overflow: hidden;
+    height: 50px;
+    line-height: 2.5em;
+    font-size: 0.8rem;
+}
+
+div.message:before {
+    line-height: 0px;
+    font-size: 0.8rem;
+    height: 12px;
+    width: 12px;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    left: -11px;
+    background-color: #FFF;
+    padding: 12px 14px 12px 10px;
+    content: "i";
+    color: #a0d3e8;
+}
+
+div.message.error {
+    background-color: #C3232D;
+    color: #FFF;
+}
+
+div.message.error:before {
+    padding: 11px 16px 14px 7px;
+    color: #C3232D;
+    content: "x";
+}
+div.message.hidden {
+    height: 0;
+}

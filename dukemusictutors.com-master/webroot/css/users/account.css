@@ -1,0 +1,40 @@
+div.accounts-container {
+    text-align: center;
+    padding: 1.5rem 6rem 0rem 6rem; /* FIXME less than 6rem?? */
+}
+
+div.accounts-container > h2 {
+    padding-bottom: 1rem;
+}
+
+div.big-wrapper {
+    padding-bottom: 1rem;
+}
+
+a.mybutton:hover {
+    text-decoration: none;
+}
+
+a.mybutton p {
+    line-height: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.button-wrapper {
+    height: 4rem;
+    line-height: 4rem;
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem;
+
+    background-color: #3E3E3E;
+    transition: all .35s ease;
+    -webkit-transition: all .35s ease;
+}
+
+div.button-wrapper:hover {
+    background-color: #181818;
+    transition: all .35s ease;
+    -webkit-transition: all .35s ease;
+}

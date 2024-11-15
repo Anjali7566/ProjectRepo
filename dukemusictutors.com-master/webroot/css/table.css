@@ -1,0 +1,109 @@
+/** Adapted from https://codepen.io/pdg/pen/MayBJK?editors=1100 */
+
+div.main-content table.sleek {
+    width: 96%;
+    display: block;
+    empty-cells: show;
+  
+    /* Decoration */
+    border-spacing: 0;
+  
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1rem;
+    color: white;
+    border: 0;
+    border-bottom: 0.16rem solid white;
+  }
+  
+  table.sleek thead, table.sleek tbody {
+    position:relative;
+    display: block;
+    width:100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  ::-webkit-scrollbar {
+      width: 0px;  /* Remove scrollbar space */
+      background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+  
+  table.sleek tr{
+    width: 100%;
+    display:flex;
+  }
+  
+  table.sleek td, table.sleek th{
+    flex-basis:100%;
+    flex-grow:2;
+    display: block;
+    padding: 1rem;
+    text-align:left;
+  }
+  
+  /* Other options */
+  
+  table.sleek.small-first-col td:first-child,
+  table.sleek.small-first-col th:first-child{
+    flex-basis:20%;
+    flex-grow:1;
+  }
+  
+  table tbody.body-half-screen{
+    max-height: 50vh;
+  }
+  
+  table.small-col {flex-basis:10%;}
+  
+  
+  
+  /** From old table.css **/
+  table.sleek thead, table.sleek tbody, table.sleek tr, table.sleek th, table.sleek td {
+      color:white;
+  }
+  
+  table.sleek thead {
+      background-color: transparent;
+  }
+  
+  table.sleek thead > tr:first-child {
+      background-color: transparent;
+  }
+  
+  table.sleek tr {
+      background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  table.sleek tbody tr:nth-child(2n) {
+      background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  table.sleek tr.selected, table.sleek tbody tr.selected:nth-child(2n) {
+      background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  table.sleek th.capital {
+      text-transform: capitalize;
+  }
+  
+  table.sleek th, table.sleek  td {
+      padding: 8px;
+      text-align: center;
+      border-bottom: 0.08rem solid white;
+  }
+  
+  table.sleek thead {
+      border-bottom: 0.16rem solid white;
+  }
+  
+  div.table-img-wrapper {
+      width: 1.5rem;
+      height: 1.5rem;
+  }
+  
+  /** FIXME center image**/
+  div.table-img-wrapper > img {
+      height: 100%;
+      width: 100%;
+  }

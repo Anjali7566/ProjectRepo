@@ -1,0 +1,30 @@
+div.main-content .title-float {
+    float: left;
+    margin: 0;
+    padding: 0.5rem;
+
+}
+
+div.stats {
+    right: 0;
+    padding-bottom: 0.7rem;
+}
+
+div.stats > h4 {
+    text-align: right;
+    padding-top: 0.5rem;
+    padding-top: calc(0.5rem + 0.3rem); /* calculated using half difference between h2 and h4 in mystyle.css */
+    margin: 0;
+}
+
+div.filter {
+    display: block;
+}
+
+div.filter select {
+    color: black;
+}
+
+.inline-block {
+    display: inline-block;
+}

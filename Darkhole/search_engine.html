@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/jpg" href="Google-favicon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+          width:100%;
+          height:100%;
+          position:fixed;
+          background-image:url('WhatsApp Image 2024-04-09 at 3.26.21 PM.jpeg');
+          background-attachment: fixed;
+          background-size:100% 100%;
+        }
+        .second{
+            font-size: 7em;
+            margin-top: 11%;
+            margin-left: 35%;
+            background-image:url('WhatsApp Image 2024-04-07 at 4.05.06 PM.jpeg');
+            background-size:55% 90%;
+            color:transparent;
+            -webkit-background-clip:text;
+            
+        }
+        .Dark_O{
+            background-image:url('WhatsApp Image 2024-04-07 at 4.05.05 PM.jpeg');
+            background-size: 100% 100%;
+            color:transparent;
+            border-radius:40% 50%;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+        #searchInput{
+          margin-left:30%;
+          width:40%;
+          padding: 20px;
+          margin-top: 8px;
+          border-radius: 30px;
+          color: white;
+          background-image:url('WhatsApp Image 2024-04-07 at 4.05.06 PM.jpeg');
+        }
+#serchInput::placeholder{
+  padding:20px;
+  font-size: 1.1em;
+}
+.nav{
+ display: flex;
+ justify-content:flex-end;
+ gap:60px;
+ margin-right:20px;
+ margin-left: auto;
+ padding: 10px;;
+ background-image:url('');
+ background-size: 350% 100%;
+ width:100%;
+}
+.magnify{
+  margin-right:92%;
+  margin-left:2%;
+  width:70px;
+  height:70px;
+  background-color: antiquewhite;
+}
+.user{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  margin-right:1px;
+  margin-top: 50px;
+  align-items:center;
+  margin-left: 50%;
+  background-color: aqua;
+  border:1px solid black;
+}
+.user:hover{
+  cursor: pointer;
+  width:62px;
+  height:62px;
+}
+.other{
+  margin-left:96%;
+  margin-top:40px;
+  padding:3px;
+  margin-right:10px;
+  background-color: black;
+  cursor: pointer;
+}
+.menu{
+  width:43px;
+  height:43px;
+  padding:2px;
+  margin-bottom:5%;
+  cursor: pointer;
+}
+.menu:hover{
+   width:41px;
+   height:41px;
+}
+.gmail{
+  width: 43px;
+  height:43px;
+  padding:2px;
+}
+.gmail:hover{
+  width:41px;
+  height:41px;
+}
+.nav-items:hover{
+  cursor: pointer;
+  font-size:16px;
+  color: rgba(46, 171, 11, 0.313);
+}
+.input{
+  border: 1px solid #e3e3e3;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 900px;
+  display: flex;
+}
+.search-fiel{
+  border: none;
+  margin-top: 8px;
+  margin-left: 25px;
+  padding: 0;
+  color: rgba(0,0,0,.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  height: 34px;
+  font-size: 16px;
+  width: 80%;
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom:0;
+  width:100%;
+  background-color:black;
+  font-size: 15px;
+  color:rgb(246, 229, 229);
+ }
+.footer-menu{
+  display: flex;
+  gap:70px;
+}
+li{
+  list-style-type:none;
+}
+.last-menu-1, .last-menu-2{
+  display: flex;
+  gap:30px;
+  margin:7px;
+}
+.last-menu-1{
+  margin-left:100px;
+}
+.last-menu-2{
+  margin-left:auto;
+  margin-right: 90px;
+}
+#input-file{
+  display: none;
+}
+.im{
+  width:20px;
+  position: relative;
+  margin-right:35%;
+  border: 1px solid white;
+  border-radius:25px;
+}
+ </style>
+</head>
+<body> 
+    <div class= "container">
+      <video autoplay muted loop  class="magnify"><source src="WhatsApp Video 2024-04-10 at 1.38.40 PM.mp4"></video>
+      <div class="search">
+         <h1 class="second">Darkh<span class="Dark_O">O</span>le</h1>
+        <div classs="input">
+          <input class="search-field" type="text" id="searchInput" autofocus name="serch" placeholder="Hey, What you want to know......" onclick="Search() ">
+      </div>
+      <img src="user.png" class="user" id="profile-pic" onclick="user()">
+      <label for="input-file"><img class="im" src=""></label>
+      <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+      <div class="other">
+           <img class="gmail" src="gmail.png" onclick="gmail()"/>
+           <img class="menu" src="mwnu.png" onclick="menu()"/>
+      </div>
+    </div>
+  </div>
+    <footer class="footer">
+      <div class="pak">India</div>
+      <hr class="break">
+      <div class="footer-menu">
+         <ul class="last-menu-1">
+          <li class="items">About</li>
+          <li class="items">Advertising</li>
+          <li class="items">Business</li>
+          <li class="items">How search works</li>
+         </ul>
+    
+         <ul class="last-menu-2">
+           <li class="items">Privacy</li>
+           <li class="items">Terms</li>
+           <li class="items">Settings</li>
+         </ul>
+      </div>
+    </footer>
+    <script>
+      let elem = document.getElementById('searchInput');
+
+
+      let profilePic = document.getElementById('profile-pic');
+      let inputFile = document.getElementById('input-file');
+
+      inputFile.onchange = function(){
+      profilePic.src = URL.createObjectURL(inputFile.files[0]);
+}
+
+      function Search(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+            window.location = 'https://www.google.com/search?q=' + elem.value;
+        }
+        }
+        elem.addEventListener("keyup", Search); 
+        
+        
+        
+        function gmail(){
+        window.location = 'https://mail.google.com/mail/u/0/#inbox';
+        }
+        
+        function user(){
+        window.location = 'user.html';
+        }
+        
+        
+    </script>
+</body>
+</html>
+
+
+
+

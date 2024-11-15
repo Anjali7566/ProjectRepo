@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #profile-pic{
+            width:70px;
+            height:70px;
+            margin-top:10%;
+            border: 1px solid white;
+            border-radius: 50px;
+        }
+        label{
+            display: block;
+            width: 100px;
+            background:#e3362c;
+            color:#fff;
+            padding:12px;
+            margin:10px auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input{
+            display: none;
+        }
+        .container{
+            width:35%;
+            height:55%;
+            border:1px solid white;
+            border-radius:25px;
+            margin-left: 32%;
+            margin-top:10%;
+            background-color:aquamarine;
+
+        }
+        .feat{
+            width:60%;
+            height:60%;
+            margin-left: 24%;
+            border: 1px solid white;
+            margin-bottom: 20%;
+            margin-top: 10%;
+            border-radius:25px;
+        }
+        .list{
+            list-style-type: none;
+            box-shadow: #e3362c;
+            cursor: pointer;      
+        }
+       .list .acc{
+            margin-left: 2px;
+        }
+        .list .sign{
+            margin-right: 20%;
+        }
+        .list li{
+            padding: 10px;
+        }
+        .vertical{
+            display: flex;
+            gap:30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+    <img src="user.png" id="profile-pic">
+    <label for="input-file">Upload</label>
+    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+      </center>
+      <div class="feat">
+      <ul class="list">
+       <div class="vertical"><li>Add Account</li><li>Sign out</li></div>
+        <li>Search history</li>
+        <li>Manage Account</li>
+        <li>Settings</li>
+        <li></li>
+       </ul>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+div.main-content .receipt-card-zone {
+    align-content: center;
+}
+
+div.card-container {
+    padding-top: 2.5rem; padding-bottom: 2rem;
+}
+
+div.main-content .receipt-card {
+    background-color: white;
+    color: black;
+    max-width: 80%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.15rem 0.3rem 0 rgba(0, 0, 0, 0.2), 0 0.2rem 0.7rem 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 1rem;
+}
+
+.receipt-card a, a.submit-button {
+    margin-bottom: 0.5rem;
+    display: block;
+    background-color: rgb(17, 107, 244);
+    color: rgb(240, 240, 240);
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+div.submit-button-wrapper {
+    width: 100%;
+    align-content: center;
+}
+
+a.submit-button {
+    display: inline-block;
+    padding: 0.6rem;
+}

@@ -1,0 +1,259 @@
+.huge-pic-display-wrapper {
+    position: relative;
+    height: 500px; /* FIXME */
+    width: 100%;
+}
+
+.huge-pic-display {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.huge-pic {
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.huge-pic-scroll-button-wrapper {
+    position: absolute;
+    width: 40px; /* FIXME no hardcoded dimensions, use rem*/
+    height: 40px;
+    top: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+div.huge-pic-scroll-button-wrapper > a, img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.huge-pic-description-wrapper {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 6px 6px 0 0;
+    background-color: #3E3E3E;
+    opacity: 0.8;
+
+    top: 80%;
+    height: 20%;
+    width: 100%;
+}
+
+.huge-pic-description {
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 20px 0 20px;
+}
+
+.padding-before-sites {
+    padding-bottom: 6rem; /* Want 2rem between pics plus what's half of site-photo-wrapper height */
+}
+
+div.about-us {
+    box-shadow: 0 0rem 0.1rem #777777;
+}
+
+div.sites-shift-up{
+    position: relative;
+    margin-top: -4rem; /* half photo-wrapper height */
+}
+
+div.site-photo-wrapper {
+    background-color: white;
+    border-radius: 20px;
+    height: 8rem;
+    width: 13rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #242424;
+}
+
+div.site-photo-wrapper a {
+    height: 100%;
+    width: auto;
+}
+
+div.inner-photo-wrapper {
+    height: 100%;
+    width: auto;
+}
+
+img.site-photo {
+    height: 85%;
+    color: black;
+}
+
+div.site-card {
+    padding-bottom: 3.5rem; /* want 2rem plus half of wax-sealheight */
+}
+
+div.wax-seal {
+    position: absolute;
+    margin-top: -1.5rem;
+    height: 3rem;
+    width: 100%;
+}
+
+.wax-seal > img {
+    height: 95%;
+    width: auto;
+    border-radius: 1.5rem; /* half of wax-seal height */
+    box-shadow: 0.07rem 0.1rem 0.05rem #222222;
+    z-index: 999;
+}
+
+div.events {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    box-shadow: 0 0rem 0.1rem #222222;
+}
+
+div.timeline-zone {
+
+}
+
+div.event-block {
+    margin: 0;
+    height: 11rem; /* FIXME */
+    text-align: left;
+}
+
+img.event-image {
+    height: 90%;
+}
+
+div.mobile-event-image-wrapper {
+    width: 70%;
+    height: 100%;
+    padding-bottom: 1rem;
+}
+
+img.mobile-event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+} 
+/** FIXME make this iamge the same dimensions as volunteer sites **/
+
+/** UNUSED
+div.diagonal-wrapper {
+    margin: 0 4.5%;
+    width: 94%;
+    height: 20%;
+}
+
+img.diagonal-pic {
+    width: 100%;
+    height: 100%;
+}
+*/
+
+/** rest is line stuff **/
+div.diagonal-down-left, div.diagonal-down-right {
+    margin-left: 5%;
+    height: 20%;
+}
+
+div.diagonal-down-right {
+    width: 90%;
+    background: linear-gradient(to top right, transparent calc(50% - 1px), white, transparent calc(50% + 1px) )
+}
+
+div.diagonal-down-left {
+    width: 90%;
+    background: linear-gradient(to top left, transparent calc(50% - 1px), white, transparent calc(50% + 1px) )
+}
+
+div.vline-left-first, div.vline-left, div.vline-left-extra {
+    width: 100%;
+    border-left: 2px solid white;
+}
+
+div.vline-right, div.vline-right-extra {
+    width: 95%;
+    border-right: 2px solid white;
+}
+
+p.left-date, p.right-date {
+    color: #111111;
+    background-color: #EEEEEE;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    display: block;
+}
+
+p.left-date {
+    text-align: left;
+    float: left;
+    border-radius: 0.2rem 0.5rem;
+}
+
+p.right-date {
+    text-align: right;
+    float: right;
+    border-radius: 0.5rem 0.2rem;
+}
+
+div.vline-left-first {
+    height: calc(80% - 2px);
+}
+
+div.vline-left, div.vline-right {
+    height: 80%;
+}
+
+div.vline-left-extra, div.vline-right-extra {
+    height: 19%;
+}
+
+div.vline-left-first, div.vline-left, div.vline-left-extra {
+    margin-left: 5%;
+}
+
+div.vline-right, div.vline-right-extra {
+    margin-left: 0
+}
+
+div.dotted-beginning-line, div.dotted-ending-line-left, div.dotted-ending-line-right  {
+    width: 10%;
+    border-top: 2px dotted white;
+}
+
+div.dotted-ending-line-right {
+    float: left;
+    margin-left: 90%;
+}
+
+div.vline-right > h4, div.vline-left > h4, div.vline-left-first > h4 {
+    display: inline-block;
+    margin-top: 20%;
+    font-size: 1rem;
+}
+
+div.mid-line-left, div.mid-line-right  {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    margin-top: calc(20% + 0.25em);
+    width: 15%;
+    border-top: 2px solid white;
+}
+
+div.mid-line-left {
+    margin-left: calc(5% + 2px);
+}
+
+div.mid-line-right {
+    margin-left: calc(95% - 2px);
+}
